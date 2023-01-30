@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Отслеживание InPost</title>
+</head>
+
+<body>
+    <h1>Отслеживание посылки InPost!</h1>
+
+
+    <form class="form">
+        <div class="container">
+            <div class="form__row">
+                <div class="form__item">
+                    <input type="tel" class="track-number" placeholder="Введите номер посылки">
+                    <span class="example">Например 631588779300543110206026 (24 символа)</span>
+                </div>
+                <div class="form__item">
+                    <button type="submit" class="find-button">Искать</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <div class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__trackinfo">Номер посылки: <span class="main__tracknumber"></span></div>
+                <div class="main__error">Посылка не найдена. Проверьте правильность номера посылки</div>
+                <div class="main__history history">
+                    <div class="history__row">
+                        <!-- <div class="history__item">
+                            <div class="history__date">25 Янв 2023, 10:07</div>
+                            <div class="history__event">
+                                <div class="histoty__name">Dostarczona.</div>
+                                <div class="history__description">Podróż przesyłki od Nadawcy do Odbiorcy zakończyła się, ale nie musi to oznaczać końca naszej znajomości:) Jeśli lubisz InPost, odwiedź nasz fanpage na Facebooku. Dziękujemy!</div>
+                            </div>
+                        </div>
+                        <div class="history__item">
+                            <div class="history__date">23 Янв 2023, 10:07</div>
+                            <div class="history__event">
+                                <div class="histoty__name">Nadana w paczkomacie.</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
